@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>纯html+css导航</title>
+
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+.clear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    
+}
+div{
+	display:block;
+	border:0px solid #505255;
+	
+	border-radius: 5px;
+	border-radius: 5px;
+	margin:50px;
+	
+}
+li{
+	list-style:none;
+	float:left;
+	
+	position: relative;
+	
+	background:#edece4;
+}
+li:hover{
+	
+	background:#3E4245;
+	
+}
+li a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding:0 30px;
+	font-size:12px;
+	color:#00fff;
+	text-decoration:none;
+
+}
+li > a{
+	position:relative;
+	text-decoration:none;
+}
+
+li.last{
+	border-right: 0 none;
+}
+
+
+dl{
+	position:absolute;
+	display:block;
+	top:40px;
+	left: -25px;
+	
+	width:165px;
+	
+	background:#222222;
+	
+            
+}
+li:hover dl{
+	top:50px;
+	display:block;
+	width:145px;
+	padding:10px;
+}
+dl a{
+	background:transparent;
+	border:0 none;
+	text-decoration:none;
+}
+dl a:hover{
+	color:#FFF;
+	background:#999E9F;
+	txet-decoration:none;
+}
+dd{
+	margin-top:-40px;
+	opacity:0;
+	width:145px;
+	
+}
+li:hover dd{
+	margin-top:0;
+	opacity:1;
+}
+
+dt{
+	display:none;
+	margin-top:-25px;
+	padding-top:15px;
+	height:10px;
+}
+li:hover dt{
+	display:block;
+}
+.Darrow{
+	float:right;
+	margin:18px 10px 0 0;
+	border-width:5px;
+	width:0;
+	height:0;
+	
+	
+	
+	
+	
+}
+.arrow{
+	margin:0 auto;
+	margin-top:0px;
+	display:block;
+	width:10px;
+	height:10px;
+	background:#222222;
+	
+}
+</style>
+</head>
+<body>
+<div>
+	<ul class="clear">
+    	<li class="first"><a href="#"><input type="image"
+	 			src="3.png" name="image" class="image_1" /></a></li>
+        <li>
+        	<span class="Darrow" align="left"></span>
+            <a href="#">起点中文网</a>
+        	<dl>
+            	<dt><span class="arrow"></span></dt>
+                <dd><a href="#">起点女生网</a></dd>
+                <dd><a href="#">创世中文网</a></dd>
+                <dd><a href="#">云起书院</a></dd>
+            </dl>
+        </li>
+        <li>
+        	<span class="Darrow"></span>
+            <a href="#">手机阅读</a>
+        	<dl>
+            	<dt><span class="arrow"></span></dt>
+                <dd><a href="#">二维码</a></dd>
+                <dd><a href="#">苹果下载</a></dd>
+                <dd><a href="#">安卓下载</a></dd>
+            </dl>
+        </li>
+        <li>
+        	<span class="Darrow"></span>
+            <a href="#">最近阅读</a>
+        	<dl>
+            	<dt><span class="arrow"></span></dt>
+                <dd><a href="#">图片</a></dd>
+                <dd><a href="#">书名</a></dd>
+                <dd><a href="#">章节</a></dd>
+            </dl>
+        </li>
+        <li>
+        	<span class="Darrow"></span>
+            <a href="#">快速导航</a>
+        	<dl>
+            	<dt><span class="arrow"></span></dt>
+                <dd><a href="#">奇幻</a> </dd>
+                <dd> <a href="#">奇幻</a> 
+               </dd><dd><a href="#">奇幻</a></dd>
+                
+            </dl>
+        </li>
+        <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+          
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li class="last"><a href="#">充值</a></li>
+    </ul>
+</div>
+</body>
+</html>
